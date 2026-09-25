@@ -1,0 +1,27 @@
+{
+  "formatVersion": 1,
+  "redactSecrets": true,
+  "scope": "database",
+  "loadOrder": [
+    "public/default_privileges.sql",
+    "public/schema.sql",
+    "_cluster/extensions/pgcrypto.sql",
+    "_cluster/extensions/uuid-ossp.sql",
+    "auth/tables/users.sql",
+    "public/tables/profiles.sql",
+    "storage/tables/objects.sql",
+    "public/functions/handle_new_user.sql"
+  ],
+  "profile": "supabase",
+  "defaultOwner": "postgres",
+  "files": [
+    "_cluster/extensions/pgcrypto.sql",
+    "_cluster/extensions/uuid-ossp.sql",
+    "auth/tables/users.sql",
+    "public/default_privileges.sql",
+    "public/functions/handle_new_user.sql",
+    "public/schema.sql",
+    "public/tables/profiles.sql",
+    "storage/tables/objects.sql"
+  ]
+}
