@@ -536,7 +536,7 @@ export default function ItemComparePage() {
             </div>
             <div className="space-y-1.5">
               <label className="text-sm font-medium">パッケージタイプ（任意）</label>
-              <Select value={newBrandPackageType} onValueChange={setNewBrandPackageType}>
+              <Select value={newBrandPackageType} onValueChange={(val) => setNewBrandPackageType(val ?? 'none')}>
                 <SelectTrigger className="w-full">
                   <SelectValue placeholder="選択してください" />
                 </SelectTrigger>

@@ -3,7 +3,7 @@ import { LucideProps } from 'lucide-react'
 
 export type IconName = keyof typeof icons
 
-interface DynamicIconProps extends LucideProps {
+interface DynamicIconProps extends Omit<LucideProps, 'name'> {
   name?: string | null
 }
 
